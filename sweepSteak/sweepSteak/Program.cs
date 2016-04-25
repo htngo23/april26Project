@@ -10,9 +10,9 @@ namespace sweepSteak
     {
         static void Main(string[] args)
         {
-            Sweepstakes test1 = new Sweepstakes("name");
+            view views = new view();
 
-            test1.PickWinner();
+            views.menu();
             Console.ReadLine();
         }
     }

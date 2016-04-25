@@ -51,7 +51,10 @@ namespace sweepSteak
         }
         public void PrintContestantInfo()
         {
-
+            foreach(KeyValuePair<int, Participant> kvp in rost)
+            {
+                Console.WriteLine("Contestant name is: " + kvp.Value.FirstName + " " + kvp.Value.LastName + " with ID of "+ kvp.Value.lotteryID);
+            }
         }
     }
 }
